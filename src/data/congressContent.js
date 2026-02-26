@@ -2,7 +2,7 @@
 
 export const CONGRESS_OVERVIEW = `
 CIRSE 2025 — Cardiovascular and Interventional Radiological Society of Europe Annual Congress
-September 6-10, 2025 | Barcelona, Spain
+September 13-17, 2025 | Barcelona, Spain
 Organized by: CIRSE (Cardiovascular and Interventional Radiological Society of Europe)
 
 The 2025 CIRSE Annual Congress is the premier scientific meeting in Europe for interventional radiology and interventional oncology. Over 6,000 attendees including interventional radiologists, interventional oncologists, hepatologists, surgeons, medical oncologists, and industry representatives.

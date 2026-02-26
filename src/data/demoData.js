@@ -5,7 +5,7 @@ export const CONGRESS_CONFIG = {
   name: 'CIRSE 2025',
   fullName: 'Cardiovascular and Interventional Radiological Society of Europe Annual Congress 2025',
   location: 'Barcelona, Spain',
-  dates: { start: '2025-09-06', end: '2025-09-10' },
+  dates: { start: '2025-09-13', end: '2025-09-17' },
   hashtags: ['#CIRSE2025', '#InterventionalOncology', '#TACE', '#Barcelona2025'],
   tracks: [
     { id: 'track-1', name: 'Interventional Oncology' },
@@ -112,7 +112,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-1',
     authorId: 'user-1',
-    timestamp: '2025-09-08T09:15:00Z',
+    timestamp: '2025-09-15T09:15:00Z',
     day: 3,
     kitId: 'kit-2',
     kiqId: 'kiq-4',
@@ -126,8 +126,8 @@ export const MOCK_INSIGHTS = [
     tags: ['EMERALD-1', 'late-breaking', 'TACE-IO-combination'],
     likes: ['user-2', 'user-3', 'user-4', 'user-5'],
     comments: [
-      { id: 'c-1', authorId: 'user-2', text: 'This validates our TACE-IO combination strategy. Should we prepare updated clinical evidence summaries?', timestamp: '2025-09-08T09:30:00Z' },
-      { id: 'c-2', authorId: 'user-4', text: 'The LifePearl protocol detail is key \u2014 confirms our DEB is the platform of choice for combination approaches.', timestamp: '2025-09-08T09:45:00Z' },
+      { id: 'c-1', authorId: 'user-2', text: 'This validates our TACE-IO combination strategy. Should we prepare updated clinical evidence summaries?', timestamp: '2025-09-15T09:30:00Z' },
+      { id: 'c-2', authorId: 'user-4', text: 'The LifePearl protocol detail is key \u2014 confirms our DEB is the platform of choice for combination approaches.', timestamp: '2025-09-15T09:45:00Z' },
     ],
     isHot: true,
     linkedSocialPosts: ['social-1'],
@@ -135,7 +135,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-2',
     authorId: 'user-2',
-    timestamp: '2025-09-08T10:30:00Z',
+    timestamp: '2025-09-15T10:30:00Z',
     day: 3,
     kitId: 'kit-1',
     kiqId: 'kiq-1',
@@ -149,7 +149,7 @@ export const MOCK_INSIGHTS = [
     tags: ['head-to-head', 'bead-comparison', 'drug-elution'],
     likes: ['user-1', 'user-3', 'user-6'],
     comments: [
-      { id: 'c-3', authorId: 'user-1', text: 'The sustained drug elution data is powerful. We need this in our evidence package for procurement discussions.', timestamp: '2025-09-08T10:45:00Z' },
+      { id: 'c-3', authorId: 'user-1', text: 'The sustained drug elution data is powerful. We need this in our evidence package for procurement discussions.', timestamp: '2025-09-15T10:45:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: ['social-2'],
@@ -157,7 +157,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-3',
     authorId: 'user-3',
-    timestamp: '2025-09-08T11:00:00Z',
+    timestamp: '2025-09-15T11:00:00Z',
     day: 3,
     kitId: 'kit-3',
     kiqId: 'kiq-9',
@@ -171,8 +171,8 @@ export const MOCK_INSIGHTS = [
     tags: ['BioPearl', 'degradable', 're-treatment', 'safety'],
     likes: ['user-1', 'user-2', 'user-4', 'user-5', 'user-6'],
     comments: [
-      { id: 'c-4', authorId: 'user-4', text: 'The re-treatment narrative is exactly what differentiates BioPearl. No competitor has this.', timestamp: '2025-09-08T11:20:00Z' },
-      { id: 'c-5', authorId: 'user-1', text: 'Can we get the degradation timeline images for our field presentations? This visual is compelling.', timestamp: '2025-09-08T11:30:00Z' },
+      { id: 'c-4', authorId: 'user-4', text: 'The re-treatment narrative is exactly what differentiates BioPearl. No competitor has this.', timestamp: '2025-09-15T11:20:00Z' },
+      { id: 'c-5', authorId: 'user-1', text: 'Can we get the degradation timeline images for our field presentations? This visual is compelling.', timestamp: '2025-09-15T11:30:00Z' },
     ],
     isHot: true,
     linkedSocialPosts: ['social-3'],
@@ -180,7 +180,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-4',
     authorId: 'user-4',
-    timestamp: '2025-09-08T12:15:00Z',
+    timestamp: '2025-09-15T12:15:00Z',
     day: 3,
     kitId: 'kit-5',
     kiqId: 'kiq-13',
@@ -194,7 +194,7 @@ export const MOCK_INSIGHTS = [
     tags: ['BCLC-staging', 'patient-selection', 'sub-classification'],
     likes: ['user-1', 'user-2'],
     comments: [
-      { id: 'c-6', authorId: 'user-1', text: 'The B1/B2/B3 framework could reshape treatment algorithms in our favor. More TACE-eligible patients identified.', timestamp: '2025-09-08T12:30:00Z' },
+      { id: 'c-6', authorId: 'user-1', text: 'The B1/B2/B3 framework could reshape treatment algorithms in our favor. More TACE-eligible patients identified.', timestamp: '2025-09-15T12:30:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -202,7 +202,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-5',
     authorId: 'user-1',
-    timestamp: '2025-09-08T14:00:00Z',
+    timestamp: '2025-09-15T14:00:00Z',
     day: 3,
     kitId: 'kit-6',
     kiqId: 'kiq-16',
@@ -222,7 +222,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-6',
     authorId: 'user-5',
-    timestamp: '2025-09-08T14:30:00Z',
+    timestamp: '2025-09-15T14:30:00Z',
     day: 3,
     kitId: 'kit-7',
     kiqId: 'kiq-19',
@@ -236,7 +236,7 @@ export const MOCK_INSIGHTS = [
     tags: ['HEOR', 'reimbursement', 'cost-effectiveness'],
     likes: ['user-4'],
     comments: [
-      { id: 'c-7', authorId: 'user-4', text: 'The Italian re-treatment data is gold for our market access teams. Fewer procedures = lower total cost of care.', timestamp: '2025-09-08T15:00:00Z' },
+      { id: 'c-7', authorId: 'user-4', text: 'The Italian re-treatment data is gold for our market access teams. Fewer procedures = lower total cost of care.', timestamp: '2025-09-15T15:00:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -244,7 +244,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-7',
     authorId: 'user-6',
-    timestamp: '2025-09-08T15:30:00Z',
+    timestamp: '2025-09-15T15:30:00Z',
     day: 3,
     kitId: 'kit-1',
     kiqId: 'kiq-2',
@@ -264,7 +264,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-8',
     authorId: 'user-2',
-    timestamp: '2025-09-08T16:00:00Z',
+    timestamp: '2025-09-15T16:00:00Z',
     day: 3,
     kitId: 'kit-4',
     kiqId: 'kiq-11',
@@ -278,7 +278,7 @@ export const MOCK_INSIGHTS = [
     tags: ['real-world', 'registry', 'center-volume'],
     likes: ['user-1', 'user-3'],
     comments: [
-      { id: 'c-8', authorId: 'user-3', text: 'The volume-outcome relationship supports our training and proctoring programs. Higher volume = better outcomes.', timestamp: '2025-09-08T16:30:00Z' },
+      { id: 'c-8', authorId: 'user-3', text: 'The volume-outcome relationship supports our training and proctoring programs. Higher volume = better outcomes.', timestamp: '2025-09-15T16:30:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -286,7 +286,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-9',
     authorId: 'user-3',
-    timestamp: '2025-09-08T17:00:00Z',
+    timestamp: '2025-09-15T17:00:00Z',
     day: 3,
     kitId: 'kit-8',
     kiqId: 'kiq-22',
@@ -306,7 +306,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-10',
     authorId: 'user-1',
-    timestamp: '2025-09-07T09:30:00Z',
+    timestamp: '2025-09-14T09:30:00Z',
     day: 2,
     kitId: 'kit-2',
     kiqId: 'kiq-5',
@@ -320,8 +320,8 @@ export const MOCK_INSIGHTS = [
     tags: ['opening-plenary', 'TACE-IO', 'immunogenic-cell-death'],
     likes: ['user-2', 'user-3', 'user-4', 'user-5', 'user-6'],
     comments: [
-      { id: 'c-9', authorId: 'user-2', text: 'The DEB-TACE preference in combination trials is a huge talking point. We should amplify this.', timestamp: '2025-09-07T10:00:00Z' },
-      { id: 'c-10', authorId: 'user-4', text: 'Immunogenic cell death mechanism plays right into our LifePearl positioning.', timestamp: '2025-09-07T10:15:00Z' },
+      { id: 'c-9', authorId: 'user-2', text: 'The DEB-TACE preference in combination trials is a huge talking point. We should amplify this.', timestamp: '2025-09-14T10:00:00Z' },
+      { id: 'c-10', authorId: 'user-4', text: 'Immunogenic cell death mechanism plays right into our LifePearl positioning.', timestamp: '2025-09-14T10:15:00Z' },
     ],
     isHot: true,
     linkedSocialPosts: ['social-6'],
@@ -329,7 +329,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-11',
     authorId: 'user-2',
-    timestamp: '2025-09-07T11:00:00Z',
+    timestamp: '2025-09-14T11:00:00Z',
     day: 2,
     kitId: 'kit-3',
     kiqId: 'kiq-7',
@@ -349,7 +349,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-12',
     authorId: 'user-4',
-    timestamp: '2025-09-07T12:30:00Z',
+    timestamp: '2025-09-14T12:30:00Z',
     day: 2,
     kitId: 'kit-5',
     kiqId: 'kiq-14',
@@ -363,7 +363,7 @@ export const MOCK_INSIGHTS = [
     tags: ['advisory-board', 'treatment-algorithm', 'TACE-first'],
     likes: ['user-1', 'user-2', 'user-3'],
     comments: [
-      { id: 'c-11', authorId: 'user-1', text: 'The TACE-first strategy with early assessment is very aligned with our messaging. Great strategic intel.', timestamp: '2025-09-07T13:00:00Z' },
+      { id: 'c-11', authorId: 'user-1', text: 'The TACE-first strategy with early assessment is very aligned with our messaging. Great strategic intel.', timestamp: '2025-09-14T13:00:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -371,7 +371,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-13',
     authorId: 'user-6',
-    timestamp: '2025-09-07T14:00:00Z',
+    timestamp: '2025-09-14T14:00:00Z',
     day: 2,
     kitId: 'kit-6',
     kiqId: 'kiq-17',
@@ -391,7 +391,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-14',
     authorId: 'user-5',
-    timestamp: '2025-09-07T15:00:00Z',
+    timestamp: '2025-09-14T15:00:00Z',
     day: 2,
     kitId: 'kit-4',
     kiqId: 'kiq-10',
@@ -405,7 +405,7 @@ export const MOCK_INSIGHTS = [
     tags: ['technique-optimization', 'superselective', 'CBCT-guidance'],
     likes: ['user-2'],
     comments: [
-      { id: 'c-12', authorId: 'user-2', text: 'The standardized loading protocol data supports our proctoring program. We should formalize a best-practice guide.', timestamp: '2025-09-07T15:30:00Z' },
+      { id: 'c-12', authorId: 'user-2', text: 'The standardized loading protocol data supports our proctoring program. We should formalize a best-practice guide.', timestamp: '2025-09-14T15:30:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -413,7 +413,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-15',
     authorId: 'user-3',
-    timestamp: '2025-09-07T16:30:00Z',
+    timestamp: '2025-09-14T16:30:00Z',
     day: 2,
     kitId: 'kit-1',
     kiqId: 'kiq-3',
@@ -433,7 +433,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-16',
     authorId: 'user-1',
-    timestamp: '2025-09-07T17:30:00Z',
+    timestamp: '2025-09-14T17:30:00Z',
     day: 2,
     kitId: 'kit-2',
     kiqId: 'kiq-6',
@@ -447,8 +447,8 @@ export const MOCK_INSIGHTS = [
     tags: ['TACE-IO-sequencing', 'KOL-engagement', 'LifePearl-endorsement'],
     likes: ['user-2', 'user-3', 'user-4', 'user-5', 'user-6'],
     comments: [
-      { id: 'c-13', authorId: 'user-4', text: 'A Lencioni endorsement of LifePearl is extremely valuable. Can we get a quote for our materials?', timestamp: '2025-09-07T18:00:00Z' },
-      { id: 'c-14', authorId: 'user-2', text: 'The TACE-first sequencing insight is actionable. Worth sharing with HQ for medical strategy.', timestamp: '2025-09-07T18:15:00Z' },
+      { id: 'c-13', authorId: 'user-4', text: 'A Lencioni endorsement of LifePearl is extremely valuable. Can we get a quote for our materials?', timestamp: '2025-09-14T18:00:00Z' },
+      { id: 'c-14', authorId: 'user-2', text: 'The TACE-first sequencing insight is actionable. Worth sharing with HQ for medical strategy.', timestamp: '2025-09-14T18:15:00Z' },
     ],
     isHot: true,
     linkedSocialPosts: [],
@@ -456,7 +456,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-17',
     authorId: 'user-2',
-    timestamp: '2025-09-08T08:00:00Z',
+    timestamp: '2025-09-15T08:00:00Z',
     day: 3,
     kitId: 'kit-8',
     kiqId: 'kiq-23',
@@ -476,7 +476,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-18',
     authorId: 'user-6',
-    timestamp: '2025-09-08T08:45:00Z',
+    timestamp: '2025-09-15T08:45:00Z',
     day: 3,
     kitId: 'kit-7',
     kiqId: 'kiq-21',
@@ -490,7 +490,7 @@ export const MOCK_INSIGHTS = [
     tags: ['procedure-volumes', 'DEB-adoption', 'economic-analysis'],
     likes: ['user-1', 'user-4', 'user-5'],
     comments: [
-      { id: 'c-15', authorId: 'user-4', text: 'The DEB market share growth from 45% to 67% is a powerful trend. Reinforces our market position.', timestamp: '2025-09-08T09:00:00Z' },
+      { id: 'c-15', authorId: 'user-4', text: 'The DEB market share growth from 45% to 67% is a powerful trend. Reinforces our market position.', timestamp: '2025-09-15T09:00:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -498,7 +498,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-19',
     authorId: 'user-4',
-    timestamp: '2025-09-07T10:30:00Z',
+    timestamp: '2025-09-14T10:30:00Z',
     day: 2,
     kitId: 'kit-6',
     kiqId: 'kiq-18',
@@ -518,7 +518,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-20',
     authorId: 'user-3',
-    timestamp: '2025-09-08T13:00:00Z',
+    timestamp: '2025-09-15T13:00:00Z',
     day: 3,
     kitId: 'kit-4',
     kiqId: 'kiq-12',
@@ -532,7 +532,7 @@ export const MOCK_INSIGHTS = [
     tags: ['LEAP-012', 'PFS-signals', 'TACE-backbone'],
     likes: ['user-1', 'user-2', 'user-4'],
     comments: [
-      { id: 'c-16', authorId: 'user-1', text: 'If LEAP-012 confirms, it is a paradigm shift. Two positive Phase 3s for TACE-IO would be unprecedented.', timestamp: '2025-09-08T13:30:00Z' },
+      { id: 'c-16', authorId: 'user-1', text: 'If LEAP-012 confirms, it is a paradigm shift. Two positive Phase 3s for TACE-IO would be unprecedented.', timestamp: '2025-09-15T13:30:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -540,7 +540,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-21',
     authorId: 'user-5',
-    timestamp: '2025-09-07T13:00:00Z',
+    timestamp: '2025-09-14T13:00:00Z',
     day: 2,
     kitId: 'kit-8',
     kiqId: 'kiq-24',
@@ -554,7 +554,7 @@ export const MOCK_INSIGHTS = [
     tags: ['NASH-HCC', 'steatotic-liver', 'patient-population'],
     likes: ['user-1', 'user-2', 'user-4'],
     comments: [
-      { id: 'c-17', authorId: 'user-4', text: 'NASH-HCC is a rapidly growing segment. We need TACE protocols specifically optimized for these patients.', timestamp: '2025-09-07T13:30:00Z' },
+      { id: 'c-17', authorId: 'user-4', text: 'NASH-HCC is a rapidly growing segment. We need TACE protocols specifically optimized for these patients.', timestamp: '2025-09-14T13:30:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -562,7 +562,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-22',
     authorId: 'user-1',
-    timestamp: '2025-09-08T17:00:00Z',
+    timestamp: '2025-09-15T17:00:00Z',
     day: 3,
     kitId: 'kit-3',
     kiqId: 'kiq-8',
@@ -582,7 +582,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-23',
     authorId: 'user-2',
-    timestamp: '2025-09-07T17:00:00Z',
+    timestamp: '2025-09-14T17:00:00Z',
     day: 2,
     kitId: 'kit-7',
     kiqId: 'kiq-20',
@@ -596,7 +596,7 @@ export const MOCK_INSIGHTS = [
     tags: ['payer-advisory', 'TACE-IO-reimbursement', 'value-framing'],
     likes: ['user-1', 'user-4'],
     comments: [
-      { id: 'c-18', authorId: 'user-4', text: 'The "TACE adds value not cost" framing is perfect. DEB is <5% of total combo cost but enables the IO mechanism.', timestamp: '2025-09-07T17:30:00Z' },
+      { id: 'c-18', authorId: 'user-4', text: 'The "TACE adds value not cost" framing is perfect. DEB is <5% of total combo cost but enables the IO mechanism.', timestamp: '2025-09-14T17:30:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: [],
@@ -604,7 +604,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-24',
     authorId: 'user-6',
-    timestamp: '2025-09-07T11:30:00Z',
+    timestamp: '2025-09-14T11:30:00Z',
     day: 2,
     kitId: 'kit-4',
     kiqId: 'kiq-10',
@@ -624,7 +624,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-25',
     authorId: 'user-1',
-    timestamp: '2025-09-08T18:00:00Z',
+    timestamp: '2025-09-15T18:00:00Z',
     day: 3,
     kitId: 'kit-1',
     kiqId: 'kiq-1',
@@ -638,8 +638,8 @@ export const MOCK_INSIGHTS = [
     tags: ['competitive-debrief', 'strategic-positioning', 'team-alignment'],
     likes: ['user-2', 'user-3', 'user-4', 'user-5', 'user-6'],
     comments: [
-      { id: 'c-19', authorId: 'user-4', text: 'Perfect framing: LifePearl for combinations, BioPearl for re-treatment. Two distinct value propositions.', timestamp: '2025-09-08T18:15:00Z' },
-      { id: 'c-20', authorId: 'user-2', text: 'The EMERALD-1 OS data from this morning seals it. LifePearl IS the combination-era DEB.', timestamp: '2025-09-08T18:30:00Z' },
+      { id: 'c-19', authorId: 'user-4', text: 'Perfect framing: LifePearl for combinations, BioPearl for re-treatment. Two distinct value propositions.', timestamp: '2025-09-15T18:15:00Z' },
+      { id: 'c-20', authorId: 'user-2', text: 'The EMERALD-1 OS data from this morning seals it. LifePearl IS the combination-era DEB.', timestamp: '2025-09-15T18:30:00Z' },
     ],
     isHot: true,
     linkedSocialPosts: ['social-15'],
@@ -647,7 +647,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-26',
     authorId: 'user-3',
-    timestamp: '2025-09-08T11:30:00Z',
+    timestamp: '2025-09-15T11:30:00Z',
     day: 3,
     kitId: 'kit-5',
     kiqId: 'kiq-15',
@@ -667,7 +667,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-27',
     authorId: 'user-4',
-    timestamp: '2025-09-08T16:30:00Z',
+    timestamp: '2025-09-15T16:30:00Z',
     day: 3,
     kitId: 'kit-2',
     kiqId: 'kiq-4',
@@ -681,7 +681,7 @@ export const MOCK_INSIGHTS = [
     tags: ['TACE-IO', 'satellite', 'OS-improvement', 'DEB-superiority'],
     likes: ['user-1', 'user-2', 'user-3', 'user-5', 'user-6'],
     comments: [
-      { id: 'c-21', authorId: 'user-1', text: 'The 40% OS improvement number is a powerful headline. Adding to our key messages for Day 4-5.', timestamp: '2025-09-08T17:00:00Z' },
+      { id: 'c-21', authorId: 'user-1', text: 'The 40% OS improvement number is a powerful headline. Adding to our key messages for Day 4-5.', timestamp: '2025-09-15T17:00:00Z' },
     ],
     isHot: false,
     linkedSocialPosts: ['social-13'],
@@ -689,7 +689,7 @@ export const MOCK_INSIGHTS = [
   {
     id: 'ins-28',
     authorId: 'user-5',
-    timestamp: '2025-09-08T15:00:00Z',
+    timestamp: '2025-09-15T15:00:00Z',
     day: 3,
     kitId: 'kit-3',
     kiqId: 'kiq-7',
@@ -715,7 +715,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Prof. Ricardo Defined @RicardoIO_MD',
     handle: '@RicardoIO_MD',
     verified: true,
-    timestamp: '2025-09-08T09:20:00Z',
+    timestamp: '2025-09-15T09:20:00Z',
     day: 3,
     content: 'BREAKING: EMERALD-1 updated OS shows DEB-TACE + durvalumab + bevacizumab extends survival to 22.7 months vs 15.8 months. HR 0.72. This changes intermediate HCC management. #CIRSE2025 #TACE #HCC',
     likes: 892,
@@ -730,7 +730,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Clara Hernandez @ClaraIR_BCN',
     handle: '@ClaraIR_BCN',
     verified: true,
-    timestamp: '2025-09-08T10:45:00Z',
+    timestamp: '2025-09-15T10:45:00Z',
     day: 3,
     content: 'Head-to-head DEB comparison at #CIRSE2025: LifePearl ORR 72% vs DC Bead 65% vs HepaSphere 58% in intermediate HCC. PEG-based microspheres showing an edge. The sustained drug elution profile matters. #InterventionalOncology',
     likes: 567,
@@ -745,7 +745,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Filipe Veloso Gomes',
     handle: 'Filipe Veloso Gomes',
     verified: false,
-    timestamp: '2025-09-08T11:15:00Z',
+    timestamp: '2025-09-15T11:15:00Z',
     day: 3,
     content: 'Thrilled to present the BIOPEARL-ONE 12-month data at #CIRSE2025. Complete bead degradation in 85% of patients by 6 months. Successful re-treatment with no vascular occlusion. Degradable microspheres open a new paradigm in TACE \u2014 from palliative to repeated curative-intent treatments. The future of embolization is biodegradable.',
     likes: 234,
@@ -760,7 +760,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'CIRSE Official @CIRSEsociety',
     handle: '@CIRSEsociety',
     verified: true,
-    timestamp: '2025-09-08T12:00:00Z',
+    timestamp: '2025-09-15T12:00:00Z',
     day: 3,
     content: 'Day 3 at #CIRSE2025 is delivering landmark data. EMERALD-1 OS update, BioPearl degradation results, and head-to-head DEB comparisons all presented today. The interventional oncology landscape is evolving rapidly. Full coverage on our website.',
     likes: 1345,
@@ -775,7 +775,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Andreas Mueller @AndreasIR_Munich',
     handle: '@AndreasIR_Munich',
     verified: true,
-    timestamp: '2025-09-08T15:45:00Z',
+    timestamp: '2025-09-15T15:45:00Z',
     day: 3,
     content: 'DC Bead LUMI data at #CIRSE2025: great visibility but ORR comparable to standard DC Bead (63% vs 65%). At a premium price, is radiopacity alone enough? CBCT gives me all the visualization I need with any bead. The value proposition needs work. #TACE',
     likes: 378,
@@ -790,7 +790,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'EASL Official @EASLnews',
     handle: '@EASLnews',
     verified: true,
-    timestamp: '2025-09-07T09:45:00Z',
+    timestamp: '2025-09-14T09:45:00Z',
     day: 2,
     content: 'Standing room only at the #CIRSE2025 opening plenary! Prof. Llovet makes the case for TACE-immunotherapy combinations. "DEB-TACE induces immunogenic cell death \u2014 the perfect partner for checkpoint inhibitors." Over 3,000 attendees. The IO community is energized!',
     likes: 978,
@@ -805,7 +805,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Yuki Tanaka @YukiIR_Osaka',
     handle: '@YukiIR_Osaka',
     verified: true,
-    timestamp: '2025-09-07T11:15:00Z',
+    timestamp: '2025-09-14T11:15:00Z',
     day: 2,
     content: 'Fascinating session on microsphere technology at #CIRSE2025. LifePearl PEG chemistry: suspension time 357s vs DC Bead 204s. Consistent sizing (CV<5%). And now BioPearl with controlled degradation. The science behind the beads matters. #InterventionalOncology',
     likes: 456,
@@ -820,7 +820,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Marc Van den Berg, PhD',
     handle: 'Marc Van den Berg, PhD',
     verified: false,
-    timestamp: '2025-09-07T16:45:00Z',
+    timestamp: '2025-09-14T16:45:00Z',
     day: 2,
     content: 'Visited the Boston Scientific booth at #CIRSE2025. DC Bead LUMI positioning is clear: "See what you deliver." But as Prof. Maleux pointed out, CBCT already provides excellent procedural visualization. The radiopaque premium is a tough sell in cost-conscious European markets. Need stronger clinical outcome data to justify the switch.',
     likes: 167,
@@ -835,7 +835,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Interventional Oncology SIG @IO_SIG_CIRSE',
     handle: '@IO_SIG_CIRSE',
     verified: true,
-    timestamp: '2025-09-07T14:00:00Z',
+    timestamp: '2025-09-14T14:00:00Z',
     day: 2,
     content: 'Safety comparison across DEB platforms at #CIRSE2025. LifePearl shows lowest Grade 3+ hepatotoxicity (3.8% vs 6.2% DC Bead vs 8.7% HepaSphere). Controlled drug elution appears to matter for liver safety. Important data for clinical decision-making.',
     likes: 712,
@@ -850,7 +850,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Sophie Martin @SophieIO_Paris',
     handle: '@SophieIO_Paris',
     verified: true,
-    timestamp: '2025-09-07T10:45:00Z',
+    timestamp: '2025-09-14T10:45:00Z',
     day: 2,
     content: 'Reassuring safety data on TACE-immunotherapy combos at #CIRSE2025. Grade 3+ hepatic AEs manageable at 18%. No increase in liver-related mortality. With proper monitoring, TACE-IO combinations are safe and feasible. The combination era is here to stay.',
     likes: 534,
@@ -865,7 +865,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Prof. Geert Maleux, MD PhD',
     handle: 'Geert Maleux, MD PhD',
     verified: false,
-    timestamp: '2025-09-08T13:30:00Z',
+    timestamp: '2025-09-15T13:30:00Z',
     day: 3,
     content: 'Day 3 at #CIRSE2025: the combination therapy narrative dominates. EMERALD-1 OS update, LEAP-012 signals, CheckMate 74W on the horizon. DEB-TACE is becoming the backbone of intermediate HCC treatment. The question is no longer IF we combine TACE with immunotherapy, but HOW and WHEN.',
     likes: 289,
@@ -880,7 +880,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'IR Techniques @IRTechniques',
     handle: '@IRTechniques',
     verified: true,
-    timestamp: '2025-09-08T17:15:00Z',
+    timestamp: '2025-09-15T17:15:00Z',
     day: 3,
     content: 'CBCT-guided DEB-TACE data at #CIRSE2025: complete response up from 42% to 61%. Non-target embolization down from 8.3% to 2.1%. Technique + technology = better outcomes. CBCT should be standard-of-care for every TACE procedure. #InterventionalRadiology',
     likes: 623,
@@ -895,7 +895,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Elena Garcia @ElenaGarciaHCC',
     handle: '@ElenaGarciaHCC',
     verified: true,
-    timestamp: '2025-09-08T16:45:00Z',
+    timestamp: '2025-09-15T16:45:00Z',
     day: 3,
     content: 'Just left the TACE-IO satellite at #CIRSE2025. Pooled data suggests 40% OS improvement with TACE-IO combinations vs TACE alone. Standing room only. LifePearl is the DEB used in both EMERALD-1 and LEAP-012. The combination era belongs to evidence-based DEBs.',
     likes: 823,
@@ -910,7 +910,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Liver Cancer Journal @LiverCancerJ',
     handle: '@LiverCancerJ',
     verified: true,
-    timestamp: '2025-09-08T11:45:00Z',
+    timestamp: '2025-09-15T11:45:00Z',
     day: 3,
     content: 'Lively debate at #CIRSE2025: When is it too late for DEB-TACE? 72% of audience supports treating selected Child-Pugh B7 patients. ALBI score gaining traction as the preferred liver function assessment. "ALBI grade, not Child-Pugh class" seems to be the emerging consensus.',
     likes: 1289,
@@ -925,7 +925,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Maria Santos',
     handle: 'Maria Santos',
     verified: false,
-    timestamp: '2025-09-08T18:30:00Z',
+    timestamp: '2025-09-15T18:30:00Z',
     day: 3,
     content: 'End of Day 3 reflections from #CIRSE2025: LifePearl is established as the DEB of choice for the combination era (EMERALD-1, LEAP-012). BioPearl brings a unique re-treatment narrative. The IO field is consolidating around evidence-based DEB platforms. Proud of the Terumo team for an outstanding congress presence.',
     likes: 345,
@@ -940,7 +940,7 @@ export const MOCK_SOCIAL_POSTS = [
     author: 'Dr. Paolo Rossi @PaoloIR_Roma',
     handle: '@PaoloIR_Roma',
     verified: true,
-    timestamp: '2025-09-08T14:15:00Z',
+    timestamp: '2025-09-15T14:15:00Z',
     day: 3,
     content: 'The DEB-TACE market share data at #CIRSE2025 is striking. DEB now 67% of all TACE in high-volume European centers (up from 45% in 2020). And total treatment cost is LOWER than cTACE due to fewer re-treatments. The economics support DEB adoption.',
     likes: 445,
@@ -955,7 +955,7 @@ export const DAILY_SUMMARIES = [
   {
     day: 2,
     title: 'Day 2 Summary \u2014 CIRSE 2025',
-    date: '2025-09-07',
+    date: '2025-09-14',
     summary: `## CIRSE 2025 Day 2: TACE-IO Revolution and Technical Excellence
 
 ### Key Themes
@@ -989,7 +989,7 @@ export const DAILY_SUMMARIES = [
   {
     day: 3,
     title: 'Day 3 Summary \u2014 CIRSE 2025',
-    date: '2025-09-08',
+    date: '2025-09-15',
     summary: `## CIRSE 2025 Day 3: EMERALD-1 OS Breakthrough and BioPearl Momentum
 
 ### Key Themes
