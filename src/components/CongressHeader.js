@@ -28,7 +28,7 @@ export default function CongressHeader({ insights }) {
                 </h1>
                 <div className="flex items-center gap-2 sm:gap-3 text-aurivian-gray text-[10px] sm:text-xs mt-1">
                   <span className="flex items-center gap-1"><MapPin size={12} /> {CONGRESS_CONFIG.location}</span>
-                  <span className="flex items-center gap-1 hidden sm:flex"><Calendar size={12} /> May 11-14, 2025</span>
+                  <span className="flex items-center gap-1 hidden sm:flex"><Calendar size={12} /> Sept 13-17, 2025</span>
                 </div>
               </div>
               <div className="bg-aurivian-blue/20 border border-aurivian-blue/40 rounded-lg px-2 sm:px-3 py-1 sm:py-1.5">
