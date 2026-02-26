@@ -4,6 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { useAppContext } from './App';
 import { KITS, KIQS, DISCUSSION_CONTEXTS, PRODUCTS, TRIALS, SENTIMENTS, CONGRESS_CONFIG } from './data/demoData';
 
+const HCP_PERSONAS = [
+  { id: 'tier1-kol', label: 'Tier 1 KOL' },
+  { id: 'tier2-kol', label: 'Tier 2 KOL' },
+  { id: 'hcp', label: 'HCP' },
+  { id: 'nurse', label: 'Nurse / APN' },
+  { id: 'fellow', label: 'Fellow / Trainee' },
+];
+
 export default function InsightCapture() {
   const { state, dispatch } = useAppContext();
   const navigate = useNavigate();
@@ -20,6 +28,8 @@ export default function InsightCapture() {
     sentiment: 'neutral',
     narrative: '',
     tags: '',
+    hcpName: '',
+    hcpPersona: '',
   });
 
   const filteredKiqs = useMemo(() => {
@@ -39,7 +49,7 @@ export default function InsightCapture() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.kitId || !form.narrative.trim()) return;
+    if (!form.narrative.trim()) return;
 
     dispatch({
       type: 'ADD_INSIGHT',
@@ -47,9 +57,9 @@ export default function InsightCapture() {
         authorId: state.currentUser.id,
         timestamp: new Date().toISOString(),
         day: CONGRESS_CONFIG.currentDay,
-        kitId: form.kitId,
-        kiqId: form.kiqId,
-        contextId: form.contextId,
+        kitId: form.kitId || null,
+        kiqId: form.kiqId || null,
+        contextId: form.contextId || null,
         sessionTitle: form.sessionTitle,
         track: form.track,
         products: form.products,
@@ -57,6 +67,8 @@ export default function InsightCapture() {
         sentiment: form.sentiment,
         narrative: form.narrative.trim(),
         tags: form.tags.split(',').map(t => t.trim()).filter(Boolean),
+        hcpName: form.hcpName.trim() || null,
+        hcpPersona: form.hcpPersona || null,
       },
     });
 
@@ -82,10 +94,26 @@ export default function InsightCapture() {
     <div className="max-w-2xl mx-auto">
       <h2 className="text-aurivian-white text-lg font-['Michroma'] mb-6">Capture Insight</h2>
       <form onSubmit={handleSubmit} className="space-y-5">
+
+        {/* HCP Name & Persona */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className={labelClass}>KIT *</label>
-            <select value={form.kitId} onChange={e => { set('kitId', e.target.value); set('kiqId', ''); }} className={selectClass} required>
+            <label className={labelClass}>HCP Name</label>
+            <input type="text" value={form.hcpName} onChange={e => set('hcpName', e.target.value)} placeholder="e.g., Prof. Thomas Vogl" className={inputClass} />
+          </div>
+          <div>
+            <label className={labelClass}>HCP Persona</label>
+            <select value={form.hcpPersona} onChange={e => set('hcpPersona', e.target.value)} className={selectClass}>
+              <option value="">Select persona...</option>
+              {HCP_PERSONAS.map(p => <option key={p.id} value={p.id}>{p.label}</option>)}
+            </select>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className={labelClass}>KIT</label>
+            <select value={form.kitId} onChange={e => { set('kitId', e.target.value); set('kiqId', ''); }} className={selectClass}>
               <option value="">Select KIT...</option>
               {KITS.map(k => <option key={k.id} value={k.id}>{k.shortName} — {k.name}</option>)}
             </select>
@@ -118,7 +146,7 @@ export default function InsightCapture() {
 
         <div>
           <label className={labelClass}>Session / Event Title</label>
-          <input type="text" value={form.sessionTitle} onChange={e => set('sessionTitle', e.target.value)} placeholder="e.g., Late-Breaking: SURMOUNT-5 Results" className={inputClass} />
+          <input type="text" value={form.sessionTitle} onChange={e => set('sessionTitle', e.target.value)} placeholder="e.g., Late-Breaking: EMERALD-1 Updated OS" className={inputClass} />
         </div>
 
         <div>
@@ -197,12 +225,12 @@ export default function InsightCapture() {
 
         <div>
           <label className={labelClass}>Tags (comma separated)</label>
-          <input type="text" value={form.tags} onChange={e => set('tags', e.target.value)} placeholder="e.g., head-to-head, late-breaking, CV-outcomes" className={inputClass} />
+          <input type="text" value={form.tags} onChange={e => set('tags', e.target.value)} placeholder="e.g., head-to-head, late-breaking, TACE-IO" className={inputClass} />
         </div>
 
         <button
           type="submit"
-          disabled={!form.kitId || !form.narrative.trim()}
+          disabled={!form.narrative.trim()}
           className="w-full bg-aurivian-blue hover:bg-aurivian-blue/80 disabled:opacity-30 disabled:cursor-not-allowed text-white font-medium py-3 rounded-xl flex items-center justify-center gap-2 transition-colors"
         >
           <Send size={16} /> Submit Insight
